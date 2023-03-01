@@ -75,7 +75,6 @@ def go(args):
 
     ######################################
     # Fit the pipeline sk_pipe by calling the .fit method on X_train and y_train
-    # YOUR CODE HERE
     ######################################
     sk_pipe.fit(X_train, y_train)
 
@@ -98,7 +97,6 @@ def go(args):
     ######################################
     # Save the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
     # HINT: use mlflow.sklearn.save_model
-    # YOUR CODE HERE
     ######################################
     mlflow.sklearn.save_model(
         sk_pipe,
@@ -113,7 +111,6 @@ def go(args):
     # type, provide a description and add rf_config as metadata. Then, use the .add_dir method of the artifact instance
     # you just created to add the "random_forest_dir" directory to the artifact, and finally use
     # run.log_artifact to log the artifact to the run
-    # YOUR CODE HERE
     ######################################
 
     artifact = wandb.Artifact(
@@ -133,7 +130,6 @@ def go(args):
     # Here we save r_squared under the "r2" key
     run.summary['r2'] = r_squared
     # Now log the variable "mae" under the key "mae".
-    # YOUR CODE HERE
     ######################################
 
     run.summary['mae'] = mae
