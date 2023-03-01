@@ -6,28 +6,28 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: ## ADD DESCRIPTION
+        description: path to the input artifact
         type: string
 
       output_artifact:
-        description: ## ADD DESCRIPTION
+        description: path to write the output artifact to
         type: string
 
       output_type:
-        description: ## ADD DESCRIPTION
+        description: output artifact type
         type: string
 
       output_description:
-        description: ## ADD DESCRIPTION
+        description: desciption of output artifact
         type: string
 
       min_price:
-        description: ## ADD DESCRIPTION
-        type: string
+        description: minimum price allowed
+        type: float
 
       max_price:
-        description: ## ADD DESCRIPTION
-        type: string
+        description: maximum price allowed
+        type: float
 
 
     command: >-
